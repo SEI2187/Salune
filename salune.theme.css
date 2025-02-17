@@ -1,0 +1,190 @@
+/**
+ * @name Salune
+ * @author SEI2187
+ * @version 1.1.0
+ * @description A Calming dark pastel purple theme inspired by the night sky
+ * @source https://github.com/SEI2187/Salune
+ * @invite wTz4JbYeTt
+*/
+
+/* Main Variables */
+:root {
+    /* Base Colors */
+    --salune-bg: #1a1625;
+    --salune-bg-secondary: #211d2f;
+    --salune-bg-tertiary: #2a2539;
+    
+    /* Accent Colors */
+    --salune-accent: #b4a0e5;
+    --salune-accent-alt: #9784c9;
+    --salune-accent-light: #cdb9ff;
+    
+    /* Text Colors */
+    --salune-text: #e2e0e7;
+    --salune-text-muted: #a39eb2;
+    --salune-text-dark: #6e6a7a;
+    
+    /* Special Colors */
+    --salune-highlight: #f5c2ff;
+    --salune-link: #b4a0e5;
+    --salune-success: #b8e3cc;
+    --salune-warning: #f2d5a7;
+    --salune-danger: #e6a5a5;
+}
+
+/* Apply Theme */
+.theme-dark,
+.theme-light {
+    --background-primary: var(--salune-bg) !important;
+    --background-secondary: var(--salune-bg-secondary) !important;
+    --background-secondary-alt: var(--salune-bg-tertiary) !important;
+    --background-tertiary: var(--salune-bg-tertiary) !important;
+    
+    --text-normal: var(--salune-text) !important;
+    --text-muted: var(--salune-text-muted) !important;
+    --header-primary: var(--salune-text) !important;
+    --header-secondary: var(--salune-text-muted) !important;
+    
+    --interactive-normal: var(--salune-text-muted) !important;
+    --interactive-hover: var(--salune-text) !important;
+    --interactive-active: var(--salune-accent) !important;
+    
+    --background-accent: var(--salune-accent) !important;
+    --background-floating: var(--salune-bg) !important;
+}
+
+/* Channel List Styling */
+.sidebar-2K8pFh {
+    background: var(--salune-bg-secondary) !important;
+}
+
+.containerDefault--pIXnN {
+    border-radius: 4px;
+    margin: 0 8px;
+}
+
+/* Chat Area Styling */
+.chatContent-a9vAAp {
+    background: var(--salune-bg) !important;
+}
+
+.message-2qnXI6 {
+    padding: 4px 48px 4px 72px;
+    margin: 4px 0;
+}
+
+/* Message Hover Effect */
+.message-2qnXI6:hover {
+    background: var(--salune-bg-secondary) !important;
+}
+
+/* Server List Styling */
+.wrapper-3NnKdC {
+    background: var(--salune-bg-tertiary) !important;
+}
+
+/* Members List Styling */
+.members-1998pB {
+    background: var(--salune-bg-secondary) !important;
+}
+
+/* Buttons and Interactive Elements */
+.button-1YfofB {
+    background: var(--salune-accent) !important;
+}
+
+.button-1YfofB:hover {
+    background: var(--salune-accent-alt) !important;
+}
+
+/* Links */
+.anchor-3Z-8Bb {
+    color: var(--salune-link) !important;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--salune-accent) !important;
+    border-radius: 4px !important;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--salune-bg-secondary) !important;
+}
+
+/* Input Fields */
+.input-cIJ7To {
+    background: var(--salune-bg-tertiary) !important;
+    border: 1px solid var(--salune-accent) !important;
+}
+
+/* Status Colors */
+.status-1AY8sU {
+    &.online-2S838R { background-color: var(--salune-success) !important; }
+    &.idle-3DEnRT { background-color: var(--salune-warning) !important; }
+    &.dnd-1_xrcq { background-color: var(--salune-danger) !important; }
+}
+
+/* Mentions and Highlights */
+.mentioned-xhSam7 {
+    background: rgba(180, 160, 229, 0.1) !important;
+    border-left: 2px solid var(--salune-accent) !important;
+}
+
+/* Code Blocks */
+.markup-2BOw-j code {
+    background: var(--salune-bg-tertiary) !important;
+    border: 1px solid var(--salune-accent) !important;
+}
+
+/* Tooltips */
+.tooltip-2QfLtc {
+    background: var(--salune-bg-tertiary) !important;
+    color: var(--salune-text) !important;
+}
+
+/* Modal Windows */
+.root-1gCeng {
+    background: var(--salune-bg) !important;
+}
+
+/* Server Folders */
+.folder-1hbNCn {
+    background: var(--salune-bg-tertiary) !important;
+}
+
+/* Search Bar */
+.searchBar-3dMhjb {
+    background: var(--salune-bg-tertiary) !important;
+}
+
+/* User Profile Modal */
+.userPopout-xaxa6l {
+    background: var(--salune-bg) !important;
+    border: 1px solid var(--salune-accent) !important;
+}
+
+/* Settings Menu */
+.sidebarRegionScroller-3MXcoP {
+    background: var(--salune-bg-secondary) !important;
+}
+
+.contentRegionScroller-26nc1e {
+    background: var(--salune-bg) !important;
+}
+
+/* Custom Animations */
+@keyframes salune-glow {
+    0% { box-shadow: 0 0 5px var(--salune-accent); }
+    50% { box-shadow: 0 0 15px var(--salune-accent); }
+    100% { box-shadow: 0 0 5px var(--salune-accent); }
+}
+
+/* Apply subtle glow animation to certain interactive elements */
+.selected-aXhQR6 {
+    animation: salune-glow 3s infinite;
+}
